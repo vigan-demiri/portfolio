@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="">
+    <script src="https://kit.fontawesome.com/03cb351f13.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <h2 class="header__title"><span>V</span>igan.</h2>
+        <nav class="menu">
+            <ul class="menu__list" id="sidemenu">
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </header>
+    <main>
+        <div class="wallpaper" id="introduction">
+            <div class="wallpaper__title">
+                <h2>Hello, I'm Vigan</h2>
+                <h1>Digital Designer <br> and Web Developer <br>based in somewhere</h1>
+                <h3>SCROLL FOR MORE <span>----</span></h3>
+            </div>
+            <div class="wallpaper__photo">
+                <img src="images/vigan.png" alt="not found">
+            </div>
+        </div>
+        <div class="about" id="about">
+            <div class="about__contanier">
+                <div class="about__contanier-row">
+                    <div class="about__col-1">
+                        <img src="images/aboutimage.JPG" alt="not found">
+                    </div>
+                    <div class="about__col-2">
+                        <h1 class="about__col-2-title">About Me</h1>
+                        <h3>I'm Vigan Demiri, a 20-year-old from Tetovo. I have a passion for creating websites and diving into the world of web development. Building digital experiences is my forte, and I'm always eager to learn and explore new techniques in the field.</h3>
+                        <div class="about__tab-titles">
+                            <p class="about__tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="about__tab-links" onclick="opentab('experienc')">Experienc</p>
+                            <p class="about__tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="about__tab-contanier active-tab" id="skills" >
+                            <ul>
+                                <li><span>HTML</span><br>
+                                    <div class="about__skill-bar">
+                                        <div class="about__skill-per" pre="100%" style="max-width: 100%;"></div>
+                                    </div>
+                                </li>
+                                <li><span>CSS</span><br>
+                                    <div class="about__skill-bar">
+                                        <div class="about__skill-per" pre="83%" style="max-width: 83%;"></div>
+                                    </div>
+                                </li>
+                                <li><span>Java Script</span><br>
+                                    <div class="about__skill-bar">
+                                        <div class="about__skill-per" pre="46%" style="max-width: 46%;"></div>
+                                    </div>
+                                </li>
+                                <li><span>Git/GitHub</span><br>
+                                    <div class="about__skill-bar">
+                                        <div class="about__skill-per" pre="87%" style="max-width: 87%;"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="about__tab-contanier" id="experienc">
+                            <ul>
+                                <li><span>2018-2024</span><br>Working in Arberia Design</li>
+                                <li><span>2022-2024</span><br>I trained for HTML, CSS, JavaScript and Git/GitHub <br>in Capstone Academy</li>
+                            </ul>
+                        </div>
+                        <div class="about__tab-contanier" id="education">
+                            <ul>
+                                <li><span>Elementary school</span><br>Bratvo Migjeni - Tetovo</li>
+                                <li><span>High school</span><br>Gymnasium 7 March - Tetovo</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+       <div class="peoject" id="projects">
+            <div class="project__contanier">
+                <h1>My Projects</h1>
+                <div class="project__work-list">
+                    <div class="project__work">
+                        <img src="images/mercedes sc.png" alt="not found">
+                        <div class="project__work-lyers">
+                            <h3>Mercedes-Benz</h3>
+                            <p>Website design for car sales and other services.</p>
+                        </div>
+                    </div>
+                    <div class="project__work">
+                        <img src="images/nike sc.png" alt="not found">
+                        <div class="project__work-lyers">
+                            <h3>Nike</h3>
+                            <p>Designing the website for the sale of shoes.</p>
+                        </div>
+                    </div>
+                    <div class="project__work">
+                        <img src="images/navbar.png" alt="not found">
+                        <div class="project__work-lyers">
+                            <h3>Nav Bar</h3>
+                            <p>Design for vertical Nav Bar.</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="about__button">See more</a>
+            </div>
+       </div>
+    </main>
+    <footer>
+        <div id="contact">
+            <div class="contact__contanier">
+                <div class="contact__contanier-row">
+                    <div class="contact__left">
+                        <h1 class="contact__left-sub-title">Contact Me</h1>
+                        <p><a href="mailto:vigandemiri915@gmail.com"><i class="fa-solid fa-paper-plane"></i></a>vigandemir915@gmail.com</p>
+                        <p><a href="tel:+38972515900"><i class="fa-solid fa-phone"></i></a>+389 72 515 900</p>
+                        <div class="contact__left_social-icon">
+                            <a href="https://www.facebook.com/muhamet.demiri.12/"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://twitter.com/_vigan_d"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="https://www.instagram.com/vigandemirii/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/vigan-demiri-87b7692b8/"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact__right">
+                        <form action="">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your E-mail" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <button id="scrollToTopBtn"><i class="fa-solid fa-chevron-up"></i></button>
+    <script>
+        document.getElementById('scrollToTopBtn').addEventListener('click', function() {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        });
+      </script>
+    <script>
+
+        var tablinks = document.getElementsByClassName("about__tab-links")
+        var tabcontents = document.getElementsByClassName("about__tab-links")
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTraget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0"
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px"
+        }
+
+    </script>
+</body>
+</html>
